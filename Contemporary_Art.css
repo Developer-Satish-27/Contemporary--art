@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif sans-serif;
+}
+
+.nav {
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+
+}
+
+li {
+    display: inline;
+    margin: 15px;
+}
+
+ul {
+    margin-left: 300px;
+}
+
+.nav button {
+    margin: 10px;
+    background-color: rgb(15, 176, 240);
+    border-color: rgb(15, 176, 240);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+
+}
+
+.circlebox {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    background-image: url(background.webp);
+    background-size: cover;
+    overflow: hidden;
+    align-items: end;
+}
+
+.circle {
+    background-color: rgba(0, 204, 255, 0.339);
+    height: 420px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 80px;
+    width: 500px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 80px;
+    position: relative;
+    top: 50px;
+}
+
+.images {
+    height: 85vh;
+    display: grid;
+    grid-template-areas: "img1 img2 img3"
+        "img4 img5 aside"
+        "img6 img7 aside";
+
+}
+
+.img1 {
+    grid-area: img1;
+    background-image: url(art1.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    background-position: center;
+    position: relative;
+    left: -40px;
+    height: 220px;
+    width: 400px;
+
+}
+
+.img2 {
+    grid-area: img2;
+    background-image: url(art2.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    background-position: center;
+    height: 220px;
+    position: relative;
+    left: -90px;
+    width: 400px;
+
+}
+
+.img3 {
+    grid-area: img4;
+    background-image: url(art3.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    background-position: center;
+    position: relative;
+    left: 50px;
+    height: 220px;
+    width: 400px;
+
+}
+
+.img4 {
+    grid-area: img5;
+    background-image: url(art4.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    background-position: center;
+    height: 220px;
+    position: relative;
+
+    width: 400px;
+
+}
+
+.img5 {
+    grid-area: img6;
+    background-image: url(art5.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    height: 220px;
+    background-position: center;
+    position: relative;
+    left: -40px;
+    width: 400px;
+
+}
+
+.img6 {
+    grid-area: img7;
+    background-image: url(art6.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    background-position: center;
+    height: 220px;
+    position: relative;
+    left: -90px;
+    width: 400px;
+
+}
+
+.aside {
+    width: 250px;
+    grid-area: aside;
+    font-size: 18px;
+    position: relative;
+    top: 80px;
+}
+
+.center {
+    text-align: center;
+}
+
+.slide {
+    padding: 20px;
+    padding-top: 8%;
+    height: 600px;
+    text-align: center;
+    width: 96%;
+}
+
+.slide img {
+    height: 500px;
+    width: 1000px;
+    border-radius: 5px;
+}
+
+.young {
+    margin: 5%;
+    font-size: 25px;
+    display: grid;
+    grid-template-areas: "art0 art0 art0"
+        "art art art"
+        "art1 art2 art3"
+        "art4 art4 art5";
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.young p {
+    color: rgb(123, 123, 123);
+    font-size: 20px;
+}
+
+.young h4 {
+    grid-area: art0;
+    font-size: 18px;
+    color: rgb(158, 158, 158);
+    height: 50px;
+    font-weight: none;
+}
+
+.young h1 {
+    grid-area: art;
+    font-size: 50px;
+
+}
+
+.art1 {
+    grid-area: art1;
+
+    margin: 15px;
+    height: 600px;
+    overflow: hidden;
+
+}
+
+.art2 {
+    grid-area: art2;
+
+    margin: 15px;
+    height: 600px;
+    overflow: hidden;
+
+}
+
+.art3 {
+    grid-area: art3;
+
+    margin: 15px;
+    height: 600px;
+    overflow: hidden;
+
+}
+
+.art4 {
+    grid-area: art4;
+
+    margin: 15px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.art5 {
+    grid-area: art5;
+
+    margin: 15px;
+    height: 600px;
+    overflow: hidden;
+
+}
+
+.young img {
+    height: 450px;
+    position: relative;
+    left: -25%;
+    width: 158%;
+
+
+}
+
+.art4 img {
+    position: relative;
+    left: 0%;
+    height: 450px;
+    width: 100%;
+}
+
+.news {
+    display: grid;
+    grid-template-areas: "art6 art7 art8";
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5%;
+    font-size: 25px;
+}
+
+.art6 {
+    grid-area: art7;
+    margin: 15px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+
+.art7 {
+    grid-area: art8;
+    margin: 15px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+
+.news img {
+    height: 450px;
+    position: relative;
+    left: -25%;
+    width: 158%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.img {
+    transition: transform 0.2s ease-in-out;
+}
+
+.img:hover {
+    transform: rotateX(10deg) translateY(-5px);
+
+}
+
+.img0 {
+    transition: transform 0.5s ease-in-out;
+}
+
+.img0:hover {
+    transform: scale(1.2);
+}
+
+.ram {
+    overflow: hidden;
+    border-radius: 5px;
+
+}
